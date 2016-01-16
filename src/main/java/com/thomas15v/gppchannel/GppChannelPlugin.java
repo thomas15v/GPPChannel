@@ -34,7 +34,6 @@ public class GppChannelPlugin extends JavaPlugin implements Listener {
         List<Player> friends = new ArrayList<Player>();
         for (Claim claim : GriefPreventionPlus.getInstance().getDataStore().getPlayerData(uuid).getClaims()){
            for (UUID friend : claim.getPermissionMapPlayers().keySet()){
-               System.out.println(friend + " " + claim.getPermissionMapPlayers().get(friend));
                Player player = Bukkit.getPlayer(friend);
                if (player != null){
                    friends.add(player);
