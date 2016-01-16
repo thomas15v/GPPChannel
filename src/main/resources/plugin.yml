@@ -1,0 +1,4 @@
+name: GPPChannel
+version: 0.1
+main: com.thomas15v.gppchannel.GppChannelPlugin
+depend: [VentureChat, GriefPreventionPlus]

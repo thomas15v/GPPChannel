@@ -1,0 +1,21 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://maven.sk89q.com/repo/'
+    }
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    compile name: 'GriefPreventionPlus-12.13'
+    compile name: 'VentureChat'
+    compile 'org.bukkit:bukkit:1.7.10-R0.1-SNAPSHOT'
+    testCompile'junit:junit:4.11'
+}
