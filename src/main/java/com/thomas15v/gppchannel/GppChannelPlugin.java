@@ -23,7 +23,6 @@ public class GppChannelPlugin extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event){
-        System.out.println("WORKING");
         if (MineverseChatAPI.getMineverseChatPlayer(event.getPlayer()).getCurrentChannel().getName().equalsIgnoreCase("trusted")) {
             event.getRecipients().clear();
             event.getRecipients().addAll(getTrusted(event.getPlayer().getUniqueId()));
